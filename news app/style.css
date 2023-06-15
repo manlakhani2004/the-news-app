@@ -1,0 +1,148 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* overflow: hidden; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+:root{
+    --primary-text-color:#183b56;
+    --secoundary-text-color:#577592;
+    --accent-color:#2294ed;
+    --accent-color-dark:#1d69a3;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+.container{
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+p{
+    color:var(--secoundary-text-colore);
+    line-height: 1.4rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    background-color: #f3faff;
+    box-shadow:0 0 4px #bbd0e2;
+    left: 0;
+    right: 0;
+}
+
+
+.nav-content{
+    justify-content: space-between;
+}
+
+.nav-list ul{
+    gap:19px;
+}
+
+.list-items{
+    color: var(--primary-text-color);
+    font-size: 1.3rem;
+    font-weight: bold;
+    /* letter-spacing: 0.5px; */
+}
+
+.list-items.active{
+    color: #2294ed;
+    padding-bottom: 7px;
+    border-bottom: 4px solid #183b56;
+    border-radius: 6px;
+}
+
+.list-items:hover{
+    cursor: pointer;
+    color: var(--secoundary-text-color);  
+}
+
+.list-items:active{
+    color: red;
+}
+
+.search-container{
+    height: 40px;
+}
+
+.search-input{
+    height: 35px;
+    width: 200px;
+    padding-left: 10px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.search-container  button{
+  height: 32px;
+  width: 80px;
+  border-radius: 5px;
+  background-color: var(--accent-color);
+  color: white;
+  font-size: 1rem;
+  padding:4px 15px;
+  border: none;
+}
+
+.search-container  button:hover{
+    background-color: var(--accent-color-dark);
+}
+
+form{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.card-container{
+    margin-top: 8rem;
+    row-gap: 20px;
+    justify-content: space-between;
+    align-items: start;
+    flex-wrap: wrap;
+}
+
+.card{
+  width: 400px;
+  min-height: 430px;
+  box-shadow: 0 0 4px #d4ecff;
+  transition: all 0.3s ease;
+  border-radius: 4px;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+.card-header img{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card:hover{
+    background-color: #f9fdff;
+    transform: translateY(-3px);
+    box-shadow: 1px 1px 8px #d4ecff;
+}
+
+.card-content{
+    padding: 15px;
+}
+
+.card-sourse{
+    margin-block: 15px;
+}

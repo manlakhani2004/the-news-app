@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>News App</title>
+</head>
+<body>
+    <nav class=" navbar">
+        <!--company logo-->
+        <div class="container flex nav-content">
+        <div class="logo">
+            <img src="images/newslogo2.jpg" alt="" width="120px" height="80px" style="border-radius: 50%;">
+        </div>
+
+        <!--nav list-->
+        <div class="nav-list">
+            <ul class="flex">
+               <li class="list-items" onclick="navlinknews('ipl')" id="ipl">IPL</li>
+               <li class="list-items" id="Finance" onclick="navlinknews('Finance')">Finance</li>
+               <li class="list-items" id="Politics" onclick="navlinknews('Politics')">Politics</li> 
+            </ul>
+        </div>
+
+         <!--search bar-->
+         <div class="search-container flex">
+            
+                <input type="text" placeholder="e.g.Science" class="search-input" id="input-text">
+                <button id="search-btn" class="search-btn">Search</button>
+    
+         </div>
+
+        </div>
+    </nav>
+
+
+    <main>
+        <!-- cards  -->
+        <div class="card-container container flex" id="card-container">
+
+ 
+
+        </div>
+    </main>
+
+    <template id="template-card">
+        <div class="card">
+            <div class="card-header">
+                <img src="https://via.placeholder.com/400x200" alt="" id="news-img">
+            </div>
+
+            <div class="card-content">
+                <h3 id="card-title">this is title</h3>
+                <h6 id="card-source" class="card-sourse">End Gadget 26/08/2023</h6>
+                <p id="card-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum doloribus ratione exercitationem consequuntur vitae distinctio repudiandae porro? Sit, nesciunt saepe!</p>
+            </div>
+        </div>
+    </template>
+
+    <script src="script.js"></script>
+</body>
+</html>
